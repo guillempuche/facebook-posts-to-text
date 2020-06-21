@@ -2,7 +2,6 @@ const fs = require("fs");
 const moment = require("moment");
 moment.locale("es-CA");
 
-// node -e 'require("./main").main()'
 module.exports.main = () => {
 	// Get json file.
 	const json = require("./xavier_posts.json");
@@ -53,22 +52,4 @@ module.exports.main = () => {
 
 		console.log("JSON file has been saved.");
 	});
-};
-
-module.exports.test = () => {
-	// 	var result;
-	// 	var buffer = Buffer.from(
-	// 		"Guillem Puche actualiz\u00c3\u00b3 su estado.\n\n...Explore!",
-	// 		"latin1"
-	// 	);
-	// 	// result = sentence.replace("\u005C+u+([a-z]|[0-9]){4,4}", "!a");
-	// 	// result = decodeURIComponent("\u00e2\u0080\u0099");
-	// 	// result = "\u00e2\u0080\u0099".charCodeAt(0).toString(16);
-	// 	var bufferEncode = "latin1";
-	// 	var buf1 = Buffer.from("T\u00e2\u0080\u0099", bufferEncode);
-	// 	console.log(buf1);
-	// 	resultEncode = "utf-8";
-	// 	buf1 = buffer;
-	// 	result = buf1.toString(resultEncode);
-	// 	console.log(result);
 };
